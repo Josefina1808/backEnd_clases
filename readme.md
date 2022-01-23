@@ -2,7 +2,8 @@
 ## ¿Qué contiene?
 Repositorio con código desarrollado durante las clases del curso sobre BackEnd en CoderHouse
 ## Estructura
-La rama main contiene los archivos por default en todas las ramas. Luego todas las demás ramas corresponden al código de cada clase. Ejemplo: "C19-Mongoose" corresponde a la clase 19 en la que trabajamos sobre "Mongoose"
+Cada carpeta contiene el código desarrollado por clase, dentro de ellas se encuentran su respectivo archivo readme.md dónde se explica lo trabaja en dicha clase. 
+Por otro lado, las carpteas llamadas After son clases complementarias del curso, las cuales son principalmente de práctica. Y también se encuentra su archivo readme.md
 ## Autor
 Josefina Esnaola Borbore
 ## Reconocimientos
