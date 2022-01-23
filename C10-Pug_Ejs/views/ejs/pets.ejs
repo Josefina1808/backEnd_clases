@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('head');%>
+  <body>
+    <h1 style="color: green"><%= mensaje %></h1>
+
+    <ul>
+      <% pets.forEach(function(pet) { %>
+        <li> <%= pet.name %> tiene <%= pet.age %> años.</li>
+      <% }) %>
+    </ul>
+    
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('head');%>
+<body>
+    <h1 style="color:blue"> <%= title %> </h1>
+    
+    <% const estilo_p = "display: inline; margin: 0.3rem;"; %>
+    <div>
+        <p style= <%= estilo_p%>> <%= min%> </p>
+        <meter
+            min=<%= min%>  
+            max=<%= max%>  
+            value=<%= level%>  
+        ></meter>
+        <p style= <%= estilo_p%>> <%= max%> </p>
+    </div>
+</body>
+</html>

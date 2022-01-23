@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('head');%>
+<body>
+    <% const estilo = "color:red;";%>
+    <% if (mensaje) { %>
+        <h2 style=<%= estilo %>><%= mensaje%></h2>
+    
+    <% } %>
+</body>
+</html>

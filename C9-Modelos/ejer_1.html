@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ejercicio<br>
+        <span></span>
+    </h1>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script>
+      const usuario = {
+        nombre: "Josefina",
+        apellido: "Esnaola",
+        edad: 19,
+        email: "josefinaesnaola@gmail.com",
+        telefono: 2644148548,
+      };
+      const template = Handlebars.compile(`
+      <h1>Datos Personales</h1>
+    <ul>
+        <li>{{nombre}}</li>
+        <li>{{apellido}}</li>
+        <li>{{edad}}</li>
+        <li>{{telefono}}</li>
+    </ul>
+      `);
+
+      const html = template(usuario);
+      document.querySelector("span").innerHTML = html;
+    </script>
+  </body>
+</html>
