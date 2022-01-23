@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "typescript": "^4.5.4"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./babel/origen.js -o ./babel/destino.js -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josefina1808/backEnd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josefina1808/backEnd/issues"
+  },
+  "homepage": "https://github.com/Josefina1808/backEnd#readme",
+  "description": ""
+}
