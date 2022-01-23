@@ -1,4 +1,4 @@
-# Clase 21 - Trabajo con datos: Normalización
+# Clase 22 - Trabajo con datos: Normalización
 ## Temas trabajados
 - Entender el concepto de normalización de datos.
 - Comprender el uso de normalizr y su sistema de esquemas.
