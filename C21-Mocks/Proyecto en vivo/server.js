@@ -9,6 +9,6 @@ app.use('/api/usuarios', usuariosRouter)
 
 const PORT = 8080
 const server = app.listen(PORT, () => {
-   console.log(`Servidor escuchando en el puerto ${PORT}`)
+   console.log(`Listening at ${PORT}`)
 })
 server.on('error', error => console.log(`Error en servidor: ${error}`))

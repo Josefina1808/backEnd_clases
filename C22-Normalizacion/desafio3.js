@@ -139,6 +139,6 @@ console.log(JSON.stringify(normalizedData).length);
 //print(normalizedData)
 
 console.log('---- OBJ DENORMALIZADO ----');
-const denormalizedData = denormalize(normalizedData.result, [posts], normalizedData.entities)
-console.log(JSON.stringify(denormalizedData).length);
+const denormalizedData = denormalize(normalizedData.result, posts, normalizedData.entities)
+console.log(JSON.stringify(denormalizedData));
 //print(denormalizedData)

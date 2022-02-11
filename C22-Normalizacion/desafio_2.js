@@ -83,7 +83,7 @@ const data = {
     ]
 }
 
-const empleadoSchema = new schema.Entity('empleados')
+const empleadoSchema = new schema.Entity('empleado')
 
 const empresaSchema = new schema.Entity('empresas', {
   gerente: empleadoSchema,

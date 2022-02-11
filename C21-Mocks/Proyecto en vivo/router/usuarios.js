@@ -7,7 +7,7 @@ const router = Router()
 
 router.post('/popular', async (req, res, next) => {
    try {
-       res.json(await apiUsuarios.popular(req.query.cant))
+       res.json(await apiUsuarios.popular(Number(req.query.cant) || 5))
    } catch (err) {
        next(err)
    }

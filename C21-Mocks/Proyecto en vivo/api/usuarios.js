@@ -7,7 +7,7 @@ class ApiUsuariosMock extends ContenedorMemoria {
    popular(cant = 50) {
        const nuevos = []
        for (let i = 0; i < cant; i++) {
-           const nuevoUsuario = generarUsuario(generarId())
+           const nuevoUsuario = generarUsuario()
            const guardado = this.guardar(nuevoUsuario)
            nuevos.push(guardado)
        }
