@@ -1,0 +1,15 @@
+{
+  "name": "c30-proxy_ngnix",
+  "version": "1.0.0",
+  "description": "- Conocer el concepto de proxy y comprender las diferencias entre proxy directo e inverso.\r - Conocer Nginx con sus configuraciones y usos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

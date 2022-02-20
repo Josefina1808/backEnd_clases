@@ -11,7 +11,6 @@ server.on('request', (req, res) => {
         calculo.on('message', sum => {
             res.end(`La suma es ${sum}`)
         })
-        res.end(`La suma es ${sum}`)
     } else if (url == '/') {
         res.end(`OK ${++visitas}`)
     }

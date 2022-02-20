@@ -43,3 +43,4 @@ print(normalizedBlogpost);
 
 //Imprime los objs de manera más legible en la consola
 function print(obj) {console.log(util.inspect(obj, false, 12, true))}
+

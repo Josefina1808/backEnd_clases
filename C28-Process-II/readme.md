@@ -5,7 +5,7 @@
 - Comprender los procesos en NodeJS
 
 ## Ejercicios realizados
-### CHILD_PROCESS CON FORK (en la carpeta "desafio")
+### CHILD_PROCESS CON FORK (en la carpeta "fork")
 1. Realizar un servidor en express que contenga una ruta raíz '/' donde se represente la cantidad de visitas totales a este endpoint (no usar session).
 2. Se implementará otra ruta '/calculo-bloq', que permita realizar una suma incremental de los números del 0 al 100000.
 3. Comprobar que al alcanzar esta ruta en una pestaña del navegador, el proceso queda en espera del resultado. Constatar que durante dicha espera, la ruta de visitas no responde hasta terminar este proceso.

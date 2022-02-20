@@ -1,8 +1,7 @@
 const normalizr = require('normalizr')
 const {normalize, schema} = normalizr
 const util = require('util')
-
-function print(obj) {console.log(util.inspect(obj, false, 12, true))}
+function print(obj) {console.log(util.inspect(obj, false, 20, true))}
 
 const data = {
     id: "1000",
@@ -92,4 +91,5 @@ const empresaSchema = new schema.Entity('empresas', {
 })
 
 const normalizedData = normalize(data, empresaSchema)
-print(normalizedData)
+print(normalizedData) 
+
