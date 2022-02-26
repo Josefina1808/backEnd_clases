@@ -4,8 +4,5 @@
 - Aprender acerca del módulo Forever y su diferencia con Nodemon.
 - Conocer e implementar el módulo PM2 y su ventaja sobre Forever.
 
-## Ejercicios realizados
-### 
-
 ## Reconocimientos
 Equipo de CoderHouse

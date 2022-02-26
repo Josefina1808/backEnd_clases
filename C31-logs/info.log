@@ -1,0 +1,8 @@
+[2022-02-26T20:02:15.153] [WARN] archivo - La cerveza se está calentando
+[2022-02-26T20:02:15.154] [ERROR] archivo - Cerveza caída
+[2022-02-26T20:02:15.154] [FATAL] archivo - Se quebró la botella[2022-02-26T20:04:03.777] [WARN] archivo - La cerveza se está calentando
+[2022-02-26T20:04:03.778] [ERROR] archivo - Cerveza caída
+[2022-02-26T20:04:03.778] [FATAL] archivo - Se quebró la botella
+[2022-02-26T20:04:03.780] [ERROR] todo - Cerveza caída
+[2022-02-26T20:04:03.780] [FATAL] todo - Se quebró la botella
+{"level":"error","message":"log error"}
