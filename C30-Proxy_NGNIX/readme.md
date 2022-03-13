@@ -3,9 +3,5 @@
 - Conocer el concepto de proxy y comprender las diferencias entre proxy directo e inverso.
 - Conocer Nginx con sus configuraciones y usos.
 
-
-## Ejercicios realizados
-### 
-
 ## Reconocimientos
 Equipo de CoderHouse

@@ -7,19 +7,19 @@ const sns = new AWS.SNS();
 const SNS_TOPIC_ARN = "arn:aws:sns:us-east-1:822015538243:notifications";
 
 const dynamodb = new AWS.DynamoDB.DocumentClient();
-const TABLE_NAME = "registro-usuarios";
+const TABLE_NAME = 'registro-usuarios';
 
 const app = express();
 app.use(express.json());
 
 app.get('/', (req, res) => {res.send('test-api')})
 
-async function scanDynamoRecord(scanparams) {
+async function scanDynamoRecord(scanParams) {
     try {
-        let dynamoData = await dynamodb.scan(scanparams).promise();
+        let dynamoData = await dynamodb.scan(scanParams).promise();
         const items = dynamoData.Items
         while (dynamoData.LastEvaluatedKey) {
-            scanparams.ExclusiveStartKey = dynamoData.LastEvaluatedKey;
+            scanParams.ExclusiveStartKey = dynamoData.LastEvaluatedKey;
             dynamoData = await dynamodb.scan(scanParams).promise();
             items.push(...dynamoData.Items)
         }
@@ -43,35 +43,30 @@ app.get('/api/users', async (req, res) => {
 })
 
 app.post('/api/users', (req, res) => {
-    const params = {
-        TableName: TABLE_NAME,
-        Items: req.body
-    }
-    dynamodb.put(params).promise()
-    .then(() => {
-        console.log('se guardó');
-        const user = JSON.stringify(req.body)
-        return sns.publish({
-            Message: `New user added ${user}`,
-            Subject: 'New user',
-            TopicArn: SNS_TOPIC_ARN
-        }).promise()
-    })
-    .then(data => {
-        console.log('Se notificó');
-        console.log(data);
+    const params = { TableName: TABLE_NAME, Item: req.body }
 
-        const body = {
-            Operation: 'SAVE',
-            Message: 'SUCCESS',
-            Item: req.body
-        }
-        res.json(body);
-    })
-    .catch(error => {
-        console.error('Ocurrió un error:', error);
-        res.status(500).end();
-    })
+    dynamodb.put(params).promise()
+        .then(() => {
+            console.log('Se guardo')
+            const student = JSON.stringify(req.body)
+
+            sns.publish({
+                Message: `New student ${student}`,
+                Subject: 'New Student',
+                TopicArn: SNS_TOPIC_ARN
+            }).promise()
+        })
+        .then(data => {
+            const body = {
+                Operation: 'SAVE',
+                Message: 'SUCCESS',
+                Item: req.body
+            }
+            res.json(req.body)
+        })
+        .catch(error => {
+            res.sendStatus(500).send(error)
+        })
 })
 
 app.put('/api/users/:id', (req, res) => {
