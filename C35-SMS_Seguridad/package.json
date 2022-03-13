@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "nodemailer": "^6.7.2",
+    "twilio": "^3.75.1"
+  },
+  "name": "clase35-envio_mensajes_y_seguridad",
+  "description": "- Explorar y aplicar el concepto de control de versiones.\r - Utilizar Git para tu proyecto.\r - Conocer PaaS y Heroku y sus funciones.\r - Implementar un proyecto de Node en Heroku.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
