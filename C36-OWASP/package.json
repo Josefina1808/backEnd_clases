@@ -1,0 +1,15 @@
+{
+  "name": "c36-owasp",
+  "version": "1.0.0",
+  "description": "- Aprender a enviar mensajes de Whatsapp desde aplicaciones en Node.\r - Conocer acerca de OWASP y los riesgos de seguridad de aplicaciones más importantes.\r - Comprender los riesgos del OWASP Top 10.",
+  "main": "twilio_wsp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "twilio": "^3.75.1"
+  }
+}

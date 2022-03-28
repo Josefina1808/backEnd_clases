@@ -1,0 +1,13 @@
+{
+  "name": "clase37_ver_packages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "@josefina.mary/mary_add": "^1.0.0",
+    "express": "^4.17.3"
+  }
+}
